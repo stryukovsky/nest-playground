@@ -9,6 +9,16 @@ Install dependencies
 ```
 npm install
 ```
+
+Prisma code generate
+```
+npx prisma generate
+```
+
+Migrate database
+```
+npx prisma migrate dev
+```
 Start  
 ```
 npm run start:dev

@@ -27,12 +27,12 @@ export class AppController {
         });
     }
 
-    @Put("/api/orders/fail")
+    @Put("/api/orders/fail/")
     async failOrder(@Body() orderData: {orderId: string}): Promise<Order> {
         return this.appService.updateOrderStatus(orderData.orderId, OrderStatus.FAIL)
     }
 
-    @Put("/api/orders/complete")
+    @Put("/api/orders/complete/")
     async completeOrder(@Body() orderData: {orderId: string}): Promise<Order> {
         return this.appService.updateOrderStatus(orderData.orderId, OrderStatus.SUCCESS)
     }
